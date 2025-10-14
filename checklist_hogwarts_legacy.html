@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Checklist Hogwarts Legacy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; }
+        h1 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        select { margin: 5px; padding: 5px; }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr { display: block; }
+            th { position: absolute; top: -9999px; left: -9999px; }
+            td { border: none; position: relative; padding-left: 50%; }
+            td:before { position: absolute; top: 6px; left: 6px; width: 45%; white-space: nowrap; font-weight: bold; }
+            td:nth-of-type(1):before { content: "Nom"; }
+            td:nth-of-type(2):before { content: "Type"; }
+            td:nth-of-type(3):before { content: "Statut"; }
+            td:nth-of-type(4):before { content: "Récompenses"; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Checklist Hogwarts Legacy</h1>
+    <label for="typeFilter">Filtrer par Type:</label>
+    <select id="typeFilter" onchange="filterTable()">
+        <option value="">Tous</option>
+        <option value="Principale">Principale</option>
+        <option value="Secondaire">Secondaire</option>
+        <option value="Collectible">Collectible</option>
+    </select>
+    <label for="statutFilter">Filtrer par Statut:</label>
+    <select id="statutFilter" onchange="filterTable()">
+        <option value="">Tous</option>
+        <option value="À faire">À faire</option>
+        <option value="En cours">En cours</option>
+        <option value="Terminé">Terminé</option>
+    </select>
+    <table id="checklistTable">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Type</th>
+                <th>Statut</th>
+                <th>Récompenses</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Introduction</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Tutoriel, Sorts de base</td>
+            </tr>
+    
+            <tr>
+                <td>Bienvenue à Poudlard</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Accès à la maison</td>
+            </tr>
+    
+            <tr>
+                <td>Cours de défense contre les forces du mal</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Levioso</td>
+            </tr>
+    
+            <tr>
+                <td>Cours de sortilèges</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Accio</td>
+            </tr>
+    
+            <tr>
+                <td>Devoirs des professeurs</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Reparo, Incendio, Expelliarmus, etc.</td>
+            </tr>
+    
+            <tr>
+                <td>Exploration de Pré-au-Lard</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Combat, objets</td>
+            </tr>
+    
+            <tr>
+                <td>Les secrets de la bibliothèque</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Désillusion</td>
+            </tr>
+    
+            <tr>
+                <td>Épreuves de Merlin</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Extension d'inventaire</td>
+            </tr>
+    
+            <tr>
+                <td>Salle sur demande</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Espace personnel</td>
+            </tr>
+    
+            <tr>
+                <td>Les épreuves des gardiens</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Progression de l'histoire</td>
+            </tr>
+    
+            <tr>
+                <td>Quêtes finales</td>
+                <td>Principale</td>
+                <td>À faire</td>
+                <td>Fin du jeu</td>
+            </tr>
+    
+            <tr>
+                <td>Portes d’arithmancie</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Objets</td>
+            </tr>
+    
+            <tr>
+                <td>Coffres à œil</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Argent</td>
+            </tr>
+    
+            <tr>
+                <td>Tables d’astronomie</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Cosmétiques</td>
+            </tr>
+    
+            <tr>
+                <td>Pages du Guide du Sorcier</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>XP</td>
+            </tr>
+    
+            <tr>
+                <td>Statues de Demiguise</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Alohomora</td>
+            </tr>
+    
+            <tr>
+                <td>Jetons de maison</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Tenue de maison</td>
+            </tr>
+    
+            <tr>
+                <td>Cartes au trésor</td>
+                <td>Secondaire</td>
+                <td>À faire</td>
+                <td>Objets rares</td>
+            </tr>
+    
+            <tr>
+                <td>Relations avec Sebastian Pallow</td>
+                <td>Secondaire</td>
+                <td>À faire</td>
+                <td>Sorts impardonnables</td>
+            </tr>
+    
+            <tr>
+                <td>Sources de magie ancienne</td>
+                <td>Collectible</td>
+                <td>À faire</td>
+                <td>Améliorations</td>
+            </tr>
+    
+        </tbody>
+    </table>
+    <script>
+        function filterTable() {
+            var typeFilter = document.getElementById("typeFilter").value.toLowerCase();
+            var statutFilter = document.getElementById("statutFilter").value.toLowerCase();
+            var table = document.getElementById("checklistTable");
+            var tr = table.getElementsByTagName("tr");
+            for (var i = 1; i < tr.length; i++) {
+                var tdType = tr[i].getElementsByTagName("td")[1];
+                var tdStatut = tr[i].getElementsByTagName("td")[2];
+                if (tdType && tdStatut) {
+                    var typeText = tdType.textContent.toLowerCase();
+                    var statutText = tdStatut.textContent.toLowerCase();
+                    var showRow = true;
+                    if (typeFilter && typeText !== typeFilter) showRow = false;
+                    if (statutFilter && statutText !== statutFilter) showRow = false;
+                    tr[i].style.display = showRow ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
